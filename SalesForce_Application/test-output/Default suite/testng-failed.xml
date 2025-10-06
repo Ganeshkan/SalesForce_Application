@@ -3,19 +3,19 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.salesforce.testcases.LoginPage_TC_001">
+      <class name="com.salesforce.testcases.Oppurtunity_TC">
         <methods>
           <include name="startTestCase"/>
-          <include name="postCondition"/>
-          <include name="login"/>
+          <include name="TC004_Create_Opportunity_without_mandatory_fields"/>
           <include name="setUpClass"/>
-          <include name="startReport"/>
+          <include name="postCondition"/>
           <include name="tearDownClass"/>
+          <include name="startReport"/>
+          <include name="setValues"/>
           <include name="preCondition"/>
           <include name="endResult"/>
-          <include name="setValues"/>
         </methods>
-      </class> <!-- com.salesforce.testcases.LoginPage_TC_001 -->
+      </class> <!-- com.salesforce.testcases.Oppurtunity_TC -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

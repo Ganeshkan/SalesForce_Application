@@ -3,7 +3,7 @@
 <suite name="Suite"> 
   <test thread-count="5" name="Chrome">
      <classes>
-      <class name="com.salesforce.testcases.TC001_VerifyLogin"/>
+      <class name="com.salesforce.testcases.Oppurtunity_TC"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

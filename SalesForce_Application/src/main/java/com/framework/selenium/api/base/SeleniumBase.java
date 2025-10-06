@@ -85,7 +85,7 @@ public class SeleniumBase extends Reporter implements Browser, Element  {
 	protected void hoverAndClick(WebElement ele) {
 		try {
 			act = new Actions(getDriver());
-			act.moveToElement(getWait().until(ExpectedConditions.elementToBeClickable(ele))).pause(5000).click().perform();
+			act.moveToElement(getWait().until(ExpectedConditions.elementToBeClickable(ele))).pause(1000).click().perform();
 		} catch (Exception e) {
 			reportStep("Not able to do hover and click" + e.getMessage(), "fail", true);
 		}
@@ -118,7 +118,7 @@ public class SeleniumBase extends Reporter implements Browser, Element  {
 			e.printStackTrace();
 		}
 		try {
-			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(20));
+			WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(30));
 			wait.until(ExpectedConditions.visibilityOf(element));
 		} catch (Exception e) {
 			reportStep("Element did not appear after 20 seconds", "fail", false);
@@ -623,6 +623,7 @@ public class SeleniumBase extends Reporter implements Browser, Element  {
 			getDriver().manage().window().maximize();
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
 			getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+			getDriver().manage().deleteAllCookies();
 			getDriver().get(url);
 		} catch (WebDriverException e) {
 			e.printStackTrace();
