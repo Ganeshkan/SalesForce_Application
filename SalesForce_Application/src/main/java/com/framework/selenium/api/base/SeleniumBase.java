@@ -622,7 +622,7 @@ public class SeleniumBase extends Reporter implements Browser, Element  {
 			setWait();
 			getDriver().manage().window().maximize();
 			getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(90));
-			getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
+			getDriver().manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
 			getDriver().manage().deleteAllCookies();
 			getDriver().get(url);
 		} catch (WebDriverException e) {

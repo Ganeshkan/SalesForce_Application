@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>3/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Oct 06 19:50:38 IST 2025</td>
+<td>Started on:</td><td>Tue Oct 07 12:51:36 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>279 seconds (279202 ms)</td>
+<tr><td>Total time:</td><td>323 seconds (323168 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,19 +76,29 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.salesforce.testcases.Oppurtunity_TC.TC002_Edit_oppurtunity()'><b>TC002_Edit_oppurtunity</b><br>Test class: com.salesforce.testcases.Oppurtunity_TC<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
-<td><div><pre>java.lang.RuntimeException: See the reporter for details.
-	at com.framework.utils.Reporter.reportStep(Reporter.java:93)
-	at com.framework.utils.Reporter.reportStep(Reporter.java:108)
-	at com.framework.selenium.api.base.SeleniumBase.click(SeleniumBase.java:169)
-	at com.salesforce.pages.LoginPage.clickOnLogin(LoginPage.java:33)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@title=&apos;Home&apos;]//span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kanna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64828/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4401c2fd1b05fe4c0991aef97ac7a810
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.salesforce.pages.LoginPage.clickOnLogin(LoginPage.java:35)
 	at com.salesforce.testcases.Oppurtunity_TC.TC002_Edit_oppurtunity(Oppurtunity_TC.java:48)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1576416089", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1576416089'><pre>java.lang.RuntimeException: See the reporter for details.
-	at com.framework.utils.Reporter.reportStep(Reporter.java:93)
-	at com.framework.utils.Reporter.reportStep(Reporter.java:108)
-	at com.framework.selenium.api.base.SeleniumBase.click(SeleniumBase.java:169)
-	at com.salesforce.pages.LoginPage.clickOnLogin(LoginPage.java:33)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 10 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace484755433", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace484755433'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //a[@title=&apos;Home&apos;]//span (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.13.0&apos;, revision: &apos;ba948ece5b*&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 140.0.7339.208, chrome: {chromedriverVersion: 140.0.7339.207 (17230b545fd..., userDataDir: C:\Users\kanna\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64828}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:64828/devtoo..., se:cdpVersion: 140.0.7339.208, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 4401c2fd1b05fe4c0991aef97ac7a810
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
+	at com.salesforce.pages.LoginPage.clickOnLogin(LoginPage.java:35)
 	at com.salesforce.testcases.Oppurtunity_TC.TC002_Edit_oppurtunity(Oppurtunity_TC.java:48)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
@@ -100,25 +110,12 @@ function toggleAllBoxes() {
 	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:794)
-	at org.testng.TestRunner.run(TestRunner.java:596)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-	at org.testng.TestNG.runSuites(TestNG.java:1063)
-	at org.testng.TestNG.run(TestNG.java:1031)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
 </pre></div></td>
-<td>32</td>
-<td>com.salesforce.testcases.Oppurtunity_TC@61322f9d</td></tr>
+<td>134</td>
+<td>com.salesforce.testcases.Oppurtunity_TC@d35dea7</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -128,20 +125,25 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.salesforce.testcases.LoginPage_TC_001.login()'><b>login</b><br>Test class: com.salesforce.testcases.LoginPage_TC_001<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
+<td></td>
+<td>29</td>
+<td>com.salesforce.testcases.LoginPage_TC_001@510f3d34</td></tr>
+<tr>
 <td title='com.salesforce.testcases.Oppurtunity_TC.TC003_Delete_oppurtunity()'><b>TC003_Delete_oppurtunity</b><br>Test class: com.salesforce.testcases.Oppurtunity_TC<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
 <td></td>
-<td>69</td>
-<td>com.salesforce.testcases.Oppurtunity_TC@61322f9d</td></tr>
-<tr>
-<td title='com.salesforce.testcases.Oppurtunity_TC.TC004_Create_Opportunity_without_mandatory_fields()'><b>TC004_Create_Opportunity_without_mandatory_fields</b><br>Test class: com.salesforce.testcases.Oppurtunity_TC<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
-<td></td>
-<td>47</td>
-<td>com.salesforce.testcases.Oppurtunity_TC@61322f9d</td></tr>
+<td>49</td>
+<td>com.salesforce.testcases.Oppurtunity_TC@d35dea7</td></tr>
 <tr>
 <td title='com.salesforce.testcases.Oppurtunity_TC.TC001_Create_New_Oppurtunity()'><b>TC001_Create_New_Oppurtunity</b><br>Test class: com.salesforce.testcases.Oppurtunity_TC<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
 <td></td>
-<td>70</td>
-<td>com.salesforce.testcases.Oppurtunity_TC@61322f9d</td></tr>
+<td>64</td>
+<td>com.salesforce.testcases.Oppurtunity_TC@d35dea7</td></tr>
+<tr>
+<td title='com.salesforce.testcases.Oppurtunity_TC.TC004_Create_Opportunity_without_mandatory_fields()'><b>TC004_Create_Opportunity_without_mandatory_fields</b><br>Test class: com.salesforce.testcases.Oppurtunity_TC<br>Parameters: kannanganesh100910@agentforce.com, Ganesh!@#99</td>
+<td></td>
+<td>38</td>
+<td>com.salesforce.testcases.Oppurtunity_TC@d35dea7</td></tr>
 </table><p>
 </body>
 </html>

@@ -11,10 +11,10 @@ public class LoginPage_TC_001  extends ProjectSpecificMethods{
 	
 	@BeforeTest
 	public void setValues() {
-		excelFileName="Login";
+		excelFileName="SalesForce_TestData";
 		testcaseName="Salesforce Application";
 		testDescription="Login page";
-		authors="Dilip";
+		authors="Ganesh";
 		category="Sanity";
 	}
 	

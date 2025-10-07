@@ -11,9 +11,9 @@ public class Oppurtunity_TC extends ProjectSpecificMethods {
 	public String descr_value = "salesforce";
 	@BeforeTest
 	public void setValues() {
-		excelFileName="Login";
+		excelFileName="SalesForce_TestData";
 		testcaseName="Salesforce Application";
-		testDescription="Login page";
+		testDescription="Oppurtunity Page";
 		authors="Ganesh";
 		category="Sanity";
 	}

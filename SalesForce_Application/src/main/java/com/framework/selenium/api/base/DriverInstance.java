@@ -20,7 +20,7 @@ public class DriverInstance  extends AbstractTestNGCucumberTests{
 	private static final ThreadLocal<WebDriverWait> wait = new  ThreadLocal<WebDriverWait>();
 
 	public void setWait() {
-		wait.set(new WebDriverWait(getDriver(), Duration.ofSeconds(10)));
+		wait.set(new WebDriverWait(getDriver(), Duration.ofSeconds(20)));
 	}
 
 	public WebDriverWait getWait() {
@@ -31,7 +31,7 @@ public class DriverInstance  extends AbstractTestNGCucumberTests{
 		switch (browser) {
 		case "chrome":
 			ChromeOptions options = new ChromeOptions();
-			options.addArguments("--start-maximized"); 
+			options.addArguments("--start-maximized");
 			options.addArguments("--disable-notifications"); 
 			options.addArguments("--incognito");
 			remoteWebdriver.set(new ChromeDriver(options));

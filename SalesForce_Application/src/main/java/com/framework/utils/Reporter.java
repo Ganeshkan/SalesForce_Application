@@ -30,7 +30,7 @@ public abstract class Reporter extends DriverInstance {
 	private String fileName = "result.html";
 	private String pattern = "dd-MMM-yyyy HH-mm-ss";
 
-	public String testcaseName, testDescription, authors, category, dataFileName, dataFileType, excelFileName;
+	public String testcaseName, testDescription, authors, category, dataFileName, dataFileType, excelFileName, sheetName;
 	public static String folderName = "";
 
 	@BeforeSuite(alwaysRun = true)

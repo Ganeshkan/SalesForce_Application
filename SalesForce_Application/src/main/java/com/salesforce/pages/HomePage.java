@@ -24,12 +24,12 @@ public class HomePage extends ProjectSpecificMethods {
 		click(sales);
 		return this;
 	}
-	public  ViewOppurtunity Click_on_OppurtunityTab() {
+	public  RecentlyViewOppurtunity Click_on_OppurtunityTab() {
 		pause(2000);
 		WebElement OppurtunityTab = locateElement(Locators.XPATH, "//a[@title='Opportunities']//span");
 		clickUsingJs(OppurtunityTab);
 		reportStep("Navigate to Recently viewed|Oppurtunity", "pass");
-		return new ViewOppurtunity();
+		return new RecentlyViewOppurtunity();
 
 	}
 
